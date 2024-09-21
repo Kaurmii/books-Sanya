@@ -1,1 +1,171 @@
 
+<!doctype html>
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LogikaShop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+  <!-- Тіло: увесь вміст сторінки -->
+  <header class="container fixed">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="..." class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="...">
+        </div>
+      </div>
+    </div>
+    <section class="banner">
+      <h1 class="fade-in-text ">Книжковий Світ</h1>
+      <h3>Бібліотека найкращих книжок для вас!</h3>
+
+
+    </section>
+    <section class="container products py-5" id="products">
+      <h3 class="">Книги нашого видавництва "Читацький клуб".</h3>
+      <div class="container-cards products-list">
+
+
+      </div>
+    </section>
+    <section class="container products py-5" id="products">
+      <h3 class="">Навчальні книги.</h3>
+      <div class="container-cards products-list">
+
+
+      </div>
+    </section>
+    <section class="container products py-5" id="products">
+      <h3 class="">Книги англійською мовою.</h3>
+      <div class="container-cards products-list">
+
+
+      </div>
+    </section>
+    <section class="container products py-5" id="products">
+      <h3 class="">Електронні книги</h3>
+      <div class="container-cards products-list">
+
+
+      </div>
+    </section>
+    <section class="container products py-5" id="products">
+      <h3 class="">Книги інших видавництв.</h3>
+      <div class="container-cards products-list">
+
+
+      </div>
+    </section>
+    <section class="container about py-5" id="about">
+      <div class="row row-cols-1 row-cols-md-2 d-flex align-items-center">
+        <div class="col">
+          <h3 class="my-3">Видавництво "Читацький Клуб" - це накращий та найдешевший варіант для покупки багатьох книжок!
+        </div>
+        <div class="col">
+          <img src="img/screen-post-LJUaTzKtFNc-unsplash.jpg" class="img-fluid">
+        </div>
+
+
+      </div>
+    </section>
+  </main>
+  <footer>
+    <button id="themeToggle"><i class="bi bi-brightness-high"></i></button>
+    <p>Logika IT School &copy; 2024</p>
+    <p>Релізний проєкт Білик Олександри</p>
+
+
+    <div class="attribution">
+      Image by <a
+        href="https://www.freepik.com/free-photo/top-view-smartphone-with-keyboard-charger_26211576.htm#query=gadgets&position=6&from_view=search&track=sph&uuid=a96e5504-171e-4b86-aa38-9be26d27f16e">Freepik</a>
+      Image by <a
+        href="https://www.freepik.com/free-photo/high-angle-smartphone-desk-with-headphones_26211747.htm#from_view=detail_serie">Freepik</a>
+    </div>
+  </footer>
+
+
+ <!-- Модальне вікно (з'являється при натисканні на "Підтримка") -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-theme="light">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">Виникли запитання?</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="text-dark">Будь ласка, залиште номер телефону і ми зв'яжемося з Вами.</p>
+        <form action="" method="post">
+          <div class="mb-3">
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
+              placeholder="Номер телефону" />
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn cart-btn">Надіслати</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src='https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js'></script>
+  <script src="js/script.js"></script>
+</body>
+
+
+</html>
