@@ -1,8 +1,7 @@
-
-
 html {
   font-size: 18px;
 }
+
 
 body {
   background-color: #272727;
@@ -12,15 +11,18 @@ body {
   /* забираємо стандартні відступи в тега body */
 }
 
+
 body.light-theme {
   background-color: #e6e6e6;
   color: rgb(24, 24, 24);
 }
 
+
 header{
   background: rgb(232, 198, 47);
   height: 100px;
 }
+
 
 header.fixed {
   position: fixed;
@@ -37,11 +39,13 @@ header.fixed {
   color: rgb(45, 45, 45);
 }
 
+
 .nav-link:hover{
   color: rgb(232, 47, 47);
   text-shadow: 2px 2px 5px rgb(18, 18, 18);
   transition: 1s;
 }
+
 
 .btn-cart {
     display: flex;
@@ -54,7 +58,7 @@ header.fixed {
     background-color: transparent;
     position: relative;
   }
-  
+ 
   .btn-cart::after {
     content: attr(data-quantity);
     width: fit-content;
@@ -68,36 +72,37 @@ header.fixed {
     transition: .2s linear;
     top: 115%;
   }
-  
+ 
   .icon-cart {
     width: 24.38px;
     height: 30.52px;
     transition: .2s linear;
   }
-  
+ 
   .icon-cart path {
     fill: rgb(232, 198, 47);
     transition: .2s linear;
   }
-  
+ 
   .btn-cart:hover > .icon-cart {
     transform: scale(1.2);
   }
-  
+ 
   .btn-cart:hover > .icon-cart path {
     fill: rgb(232, 47, 47);
   }
-  
+ 
   .btn-cart:hover::after {
     visibility: visible;
     opacity: 1;
     top: 105%;
   }
-  
+ 
   .quantity {
     display: none;
   }
-  
+ 
+
 
   .banner {
     width: 100%;
@@ -113,16 +118,20 @@ header.fixed {
 }
 
 
+
+
 .banner h1 {
     font-size: 3rem;
     text-align: center;
 }
+
 
 .container_products {
   background-color: rgb(45, 45, 45) ;
 }
 .container_products h3{
   background-color: rgb(232, 198, 47) ;
+  margin: 0;
 }  
 .all-carts-1{
   display: flex;
@@ -133,14 +142,17 @@ header.fixed {
   height: 600px;
 }
 
+
 .carousel-own-class img{
   height: 600px;
 }
 .carousel-caption{
   margin-bottom: 150px;
 
+
 text-shadow: 1px 1px 5px black;
 }
+
 
 .card{
   display: flex;
@@ -152,10 +164,23 @@ text-shadow: 1px 1px 5px black;
   border-radius: 20px;
   color: rgb(232, 198, 47);
   background-color: #272727;
-  
+ border: 2px solid rgb(232, 198, 47);
 }
+
+
 
 
 .card img{
   width: 150px;
+}
+
+.num1 {
+  font-size: 40px;
+  text-align: center;
+  border-radius: 40px;
+  margin-top: 5px;
+}
+
+.all-carts-1 {
+  padding: 30px 0;
 }
