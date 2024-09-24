@@ -143,6 +143,10 @@ text-shadow: 1px 1px 5px black;
   flex-direction: column;
   width: 200px;
   padding: 10px;
+  border-radius: 20px;
+  color: rgb(232, 198, 47);
+  background-color: #272727;
+  
 }
 
 
