@@ -121,3 +121,31 @@ header.fixed {
 .container_products {
   background-color: rgb(232, 198, 47) ;
 }
+
+
+.carousel-own-class{
+  height: 600px;
+}
+
+.carousel-own-class img{
+  height: 600px;
+}
+.carousel-caption{
+  margin-bottom: 150px;
+
+text-shadow: 1px 1px 5px black;
+}
+
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  padding: 10px;
+}
+
+
+.card img{
+  width: 150px;
+}
