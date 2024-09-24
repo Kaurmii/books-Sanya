@@ -119,10 +119,16 @@ header.fixed {
 }
 
 .container_products {
-  background-color: rgb(232, 198, 47) ;
+  background-color: rgb(45, 45, 45) ;
 }
-
-
+.container_products h3{
+  background-color: rgb(232, 198, 47) ;
+}  
+.all-carts-1{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 .carousel-own-class{
   height: 600px;
 }
