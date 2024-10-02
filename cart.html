@@ -1,25 +1,16 @@
-
 <!doctype html>
 <html lang="en">
-
-
-
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ReadersClub</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>LogikaShop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cart.css">
 </head>
-
-
-
-
 <body>
-  <!-- Тіло: увесь вміст сторінки -->
   <header class="container fixed">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="container">
@@ -57,88 +48,77 @@
             </svg>
             <span class="cart-counter">0</span>
         </button>
-       
+        
         </div>
       </div>
     </nav>
   </header>
-  <main>
-    <section class="carousel-own-class">
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
+  <main class="container cart-page">
+
+    <section class="cart py-4">
+      <h2>Ваш кошик</h2>
+      <div class="cart-items-list">
+        У кошику ще немає товарів
+      </div>
+      <div class="margin-y">
+        Сума замовлення: <span class="cart-total">0</span> грн.
+      </div>
+      <button  id="orderBtn" class="cart-btn margin-y">Оформити замовлення</button>
+    </section>
+    <section class="order">
+      <h2>Оформлення замовлення</h2>
+      <form class="order-form" action="" method="post">
+        <div class="form-group mt-3">
+          <label for="firstName">Ім'я:</label>
+          <input class="form-control" type="text" id="firstName" name="firstName" required>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/books2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h1 class="fade-in-text ">Книжковий Світ</h1>
-              <h3>Бібліотека найкращих книжок для вас!</h3>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/books3.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h1 class="fade-in-text ">Книжковий Світ</h1>
-              <h3>Бібліотека найкращих книжок для вас!</h3>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/books4.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h1 class="fade-in-text ">Книжковий Світ</h1>
-              <h3>Бібліотека найкращих книжок для вас!</h3>
-            </div>
-          </div>
+  
+        <div class="form-group mt-3">
+          <label for="lastName">Прізвище:</label>
+          <input class="form-control" type="text" id="lastName" name="lastName" required>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+  
+        <div class="form-group mt-3">
+          <label for="email">Електронна пошта:</label>
+          <input class="form-control" type="email" id="email" name="email" required>
+        </div>
+  
+        <div class="form-group mt-3">
+          <label for="phone">Номер телефону:</label>
+          <input class="form-control" type="tel" id="phone" name="phone" required>
+        </div>
+  
+        <div class="form-group mt-3">
+          <label for="deliveryMethod">Спосіб доставки:</label>
+          <select class="form-select" id="deliveryMethod" name="deliveryMethod" required>
+            <option value="standard">Нова пошта</option>
+            <option value="express">Укрпошта</option>
+          </select>
+        </div>
+  
+        <div class="form-group mt-3">
+          <label for="address">Адреса доставки:</label>
+          <input class="form-control" type="text" id="address" name="address"  required>
+        </div>
+  
+        <div class="form-group mt-3">
+          <label for="comment">Коментар:</label>
+          <textarea class="form-control" id="comment" name="comment" rows="4"></textarea>
+        </div>
+        <button  type="submit" class="cart-btn margin-y">Підтвердити</button>
+  
+      </form>
     </section>
-
-
-    <section class="products " id="products">
-      <h3 class="num1">Книги нашого видавництва "Читацький клуб".</h3>
-      <div class="container-cards products-list">
-
-      </div>
-    </section>
-
-    <section class="products " id="products-2">
-      <h3 class="num1">Книги англійською мовою</h3>
-      <div class="container-cards products-list-2">
-
-      </div>
-    </section>
-
-
 
   </main>
   <footer>
     <button id="themeToggle"><i class="bi bi-brightness-high"></i></button>
     <p>Logika IT School &copy; 2024</p>
-    <p>Релізний проєкт Білик Олександри</p>
+    <p>Релізний проєкт Ім'я Прізвище</p>
+</div>
   </footer>
-
-
-
-
-  <!-- Модальне вікно (з'являється при натисканні на "Підтримка") -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
-    data-bs-theme="light">
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-theme="light">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -152,6 +132,7 @@
               <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
                 placeholder="Номер телефону" />
             </div>
+
           </form>
         </div>
         <div class="modal-footer">
@@ -160,14 +141,12 @@
       </div>
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src='https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js'></script>
   <script src="script.js"></script>
+  <script src="cart.js"></script>
 </body>
 
-
-
-
 </html>
+

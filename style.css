@@ -1,157 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 
 
-
-
-
-
-
-
 html {
   font-size: 18px;
 }
-
-
-
 
 body {
   background-color: #272727;
   color: white;
   font-family: "Comfortaa", sans-serif;
   margin: 0px;
-  /* забираємо стандартні відступи в тега body */
 }
-
-
-
 
 body.light-theme {
   background-color: #e6e6e6;
   color: rgb(24, 24, 24);
 }
 
-
-
+body.light-theme footer {
+  background-color: rgb(232, 198, 47);
+  color: rgb(24, 24, 24);
+}
 
 header{
   background: rgb(232, 198, 47);
-  height: 100px;
 }
-
-
-
 
 header.fixed {
   position: fixed;
-  /* Фіксоване позиціонування */
   top: 0;
-  /* Закріплено зверху */
   width: 100%;
-  /* Ширина за всю ширину вікна */
   max-width: 100%;
-  z-index: 100;
+  z-index: 999;
+  background: rgb(232, 198, 47);
 }
 .nav-link{
   font-size: 30px;
   color: rgb(45, 45, 45);
 }
 
-
-
-
 .nav-link:hover{
   color: rgb(232, 47, 47);
   text-shadow: 2px 2px 5px rgb(18, 18, 18);
   transition: 1s;
 }
-
-
-
-
 .btn-cart {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-    border: none;
-    background-color: transparent;
-    position: relative;
-  }
- 
-  .btn-cart::after {
-    content: attr(data-quantity);
-    width: fit-content;
-    height: fit-content;
-    position: absolute;
-    font-size: 15px;
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    opacity: 0;
-    visibility: hidden;
-    transition: .2s linear;
-    top: 115%;
-  }
- 
-  .icon-cart {
-    width: 24.38px;
-    height: 30.52px;
-    transition: .2s linear;
-  }
- 
-  .icon-cart path {
-    fill: rgb(45, 45, 45);
-    transition: .2s linear;
-  }
- 
-  .btn-cart:hover > .icon-cart {
-    transform: scale(1.2);
-  }
- 
-  .btn-cart:hover > .icon-cart path {
-    fill: rgb(232, 47, 47);
-  }
- 
-  .btn-cart:hover::after {
-    visibility: visible;
-    opacity: 1;
-    top: 105%;
-  }
- 
-  .quantity {
-    display: none;
-  }
- 
-
-
-
-
-  .banner {
-    width: 100%;
-    height: 90vh;
-    background: url('/img/depositphotos_270635054-stock-photo-collection-of-valuable-ancient-books.jpg');
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  margin-bottom: 20px;
 }
 
-
-
-
-
-
-
-
-.banner h1 {
-    font-size: 3rem;
-    text-align: center;
+.cart-counter{
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  font-size: 15px;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  opacity: 0;
+  transition: .2s linear;
+  top: 115%;
 }
 
+.icon-cart {
+  width: 24.38px;
+  height: 30.52px;
+  transition: .2s linear;
+}
+
+.icon-cart path {
+  fill: rgb(45, 45, 45);
+  transition: .2s linear;
+}
+
+.btn-cart:hover > .icon-cart {
+  transform: scale(1.2);
+}
+
+.btn-cart:hover > .icon-cart path {
+  fill: rgb(232, 47, 47);
+}
+
+.btn-cart:hover .cart-counter {
+  opacity: 1;
+  top: 105%;
+}
 
 
 
@@ -168,8 +108,6 @@ header.fixed {
   flex-direction: column;
   flex-wrap: wrap;
 }
-
-
 .row{
   display: flex;
   justify-content: space-evenly;
@@ -180,45 +118,41 @@ header.fixed {
   margin-bottom: 30px;
 }
 
-
-
-
 .carousel-own-class img{
   height: 600px;
 }
 .carousel-caption{
   margin-bottom: 150px;
-
-
-
-
 text-shadow: 1px 1px 5px black;
 }
 
-
-
-
-.card{
+.container-cards {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 72px;
+ 
+}
+
+.my-card {
+  display: flex;
   flex-direction: column;
-  width: 200px;
+  align-items: center;
+  justify-content: center;
   padding: 10px;
   border-radius: 20px;
   color: rgb(232, 198, 47);
   background-color: #272727;
- border: 2px solid rgb(232, 198, 47);
+  border: 2px solid rgb(232, 198, 47);
+  transition: background .2s linear;
+  width: 200px;
+  text-align: center;
+  margin: 5px;
 }
 
 
-
-
-
-
-
-
-.card img{
+.my-card  img{
   width: 150px;
   height: 200px;
 }
@@ -230,9 +164,17 @@ text-shadow: 1px 1px 5px black;
   border-radius: 40px;
   padding: 5px;
   background-color: rgb(232, 198, 47) ;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 
+.card-title{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 100px;
+}
 .all-carts-1 {
   padding: 30px 0;
 }
@@ -264,4 +206,75 @@ footer {
 #themeToggle:active {
   transform: scale(0.9);
   transition-duration: .2s;
+}
+
+.cart-btn {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(to left, rgb(194, 185, 19), rgb(126, 134, 69));
+  border-radius: 30px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 0.9em;
+  font-family: "Martian Mono", monospace;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  transition-duration: .2s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+}
+
+.bell {
+  width: 25px;
+}
+
+
+.cart-btn:hover {
+  background: linear-gradient(to left, rgb(126, 134, 69),  rgb(194, 185, 19));
+}
+
+.cart-btn:active {
+  transform: scale(0.97);
+  transition-duration: .2s;
+}
+
+.cart-btn:hover .bell {
+  animation: bellRing 0.9s both;
+}
+
+.cart-btn div {
+  position: relative;
+}
+
+
+/* bell ringing animation keyframes*/
+@keyframes bellRing {
+
+  0%,
+  100% {
+      transform-origin: top;
+  }
+
+  15% {
+      transform: rotateZ(10deg);
+  }
+
+  30% {
+      transform: rotateZ(-10deg);
+  }
+
+  45% {
+      transform: rotateZ(5deg);
+  }
+
+  60% {
+      transform: rotateZ(-5deg);
+  }
+
+  75% {
+      transform: rotateZ(2deg);
+  }
 }

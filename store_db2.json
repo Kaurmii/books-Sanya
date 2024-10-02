@@ -1,32 +1,39 @@
 [
     {
         "title": "It Ends With Us (Book 1)",
-        "image": "img/book7.png"
+        "image": "img/book7.webp",
+        "price": 410
     },
 
     {
         "title": "It Starts with Us (Book 2)",
-        "image": "img/book8.png"
+        "image": "img/book8.webp",
+        "price": 436
     },
     
     {
         "title": "If We Were Villains",
-        "image": "img/book9.png"
+        "image": "img/book9.webp",
+        "price": 496
     },
     
     {
-        "title": "A Good Girl's Guide to Murder (Book 1)",
-        "image": "img/book10.png"
+        "title": "A Good Girl`s Guide to Murder",
+        "image": "img/book10.webp",
+        "price": 435
     },
+
        
     {
         "title": "The House in the Cerulean Sea (Book 1)",
-        "image": "img/book11.png"
+        "image": "img/book11.webp",
+        "price": 575
     },
            
     {
         "title": "Violet Bent Backwards Over the Grass",
-        "image": "img/book12.png"
+        "image": "img/book12.jpg",
+        "price": 825
     }
 
    ]

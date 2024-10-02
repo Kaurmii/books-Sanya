@@ -1,32 +1,38 @@
 [
     {
         "title": "Ходячий Хаос. Книга 1. Ніж, якого не відпустиш",
-        "image": "img/section1book1.png"
+        "image": "img/section1book1.png",
+        "price": 378
     },
 
     {
         "title": "Ходячий Хаос. Книга 2. Запитання та Відповідь",
-        "image": "img/book2.png"
+        "image": "img/book2.png",
+        "price": 290
     },
     
     {
         "title": "Ходячий Хаос. Книга 3. Монстри з людей",
-        "image": "img/book3.png"
+        "image": "img/book3.png",
+        "price": 290
     },
     
     {
         "title": "Варта у Грі. Книга 1",
-        "image": "img/book4.png"
+        "image": "img/book4.png",
+        "price": 282
     },
        
     {
         "title": "Варта у Грі. Книга 2. Артефакти Праги",
-        "image": "img/book5.png"
+        "image": "img/book5.png",
+        "price": 345
     },
            
     {
         "title": "Варта у Грі. Книга 3. Кров Будапешта",
-        "image": "img/book6.png"
+        "image": "img/book6.png",
+        "price": 405
     }
 
    ]
